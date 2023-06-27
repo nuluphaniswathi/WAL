@@ -1,0 +1,41 @@
+POST http://localhost:3000/user-api/create-user
+Content-Type: application/json
+
+{
+    "username":"Deepthi",
+    "password":"preethi",
+    "Name":"Phani"
+    //"status":"true"
+
+}
+
+###
+POST http://localhost:3000/user-api/login-user
+Content-Type: application/json
+
+{
+    "username":"Deepthi",
+    "password":"preethi"
+}
+
+###
+GET http://localhost:3000/user-api/username/swathi
+
+
+###
+PUT http://localhost:3000/user-api/modify-password/Deepthi
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRlZXB0aGkiLCJpYXQiOjE2NzgxODE5NTQsImV4cCI6MTY3ODI2ODM1NH0.1c0hBDKT9foTYp8SKiIhA5NJnsKtYmMwNEb6UjPJ_iE 
+
+{
+    "password":"deepthi"
+}
+
+###
+DELETE  http://localhost:3000/user-api/delete-user/Deepthi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRlZXB0aGkiLCJpYXQiOjE2NzgxODE5NTQsImV4cCI6MTY3ODI2ODM1NH0.1c0hBDKT9foTYp8SKiIhA5NJnsKtYmMwNEb6UjPJ_iE 
+
+
+
+
+//#GET http://localhost:3000/test-api/test

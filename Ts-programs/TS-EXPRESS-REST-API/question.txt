@@ -1,0 +1,8 @@
+Create User API using TypeScript
+Use either Raw SQL queries or Sequelize
+Endpoint
+    POST /register
+     POST /login
+     GET /user/< username>
+     PUT /user/<username >
+    DELETE /user /< username > . (soft delete)
